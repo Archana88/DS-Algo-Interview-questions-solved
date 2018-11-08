@@ -6,13 +6,18 @@ def isbalanced(string):
     dict_brack = {'{':1, '(':2, '[':4, '}':-1, ')':-2,']':-4}
     sums = 0
 
+    # An empty string is technically balanced
+    if string:
+        return True
+    
     for s in string:
         if s in dict_brack:
             sums += dict_brack[s]
+            
     if not sums:
         return True
+    
 #     print(sums)
-
     return False
 
 print(isbalanced('([{])}')) # True
