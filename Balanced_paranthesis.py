@@ -1,4 +1,4 @@
-'''Check if a list of paranthesis are balanced or not - works for both perfect ('{([])}') and mixed '([{])}' sequence'''
+'''Check if a list of paranthesis are balanced or not - works for both perfect/symmetric ('{([])}') and mixed '([{])}' sequence'''
 '''Logic: balance the sequence with sum of bracket's complementary scores'''
 
 def isbalanced(string):
