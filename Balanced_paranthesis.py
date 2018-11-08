@@ -7,7 +7,7 @@ def isbalanced(string):
     sums = 0
 
     # An empty string is technically balanced
-    if string:
+    if not string:
         return True
     
     for s in string:
